@@ -1,0 +1,16 @@
+# Node modules
+client/vite-project/node_modules/
+server/node_modules/
+
+# Build files
+client/vite-project/dist/
+
+# Environment files
+server/.env
+client/vite-project/.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/

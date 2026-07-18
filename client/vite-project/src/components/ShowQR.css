@@ -1,0 +1,40 @@
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.qr-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: #00d9ff;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.qr-btn:hover {
+  transform: scale(1.05);
+}
+.qr-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.qr-box img {
+  width: 250px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.qr-box p {
+  margin-top: 10px;
+  color: white;
+}
