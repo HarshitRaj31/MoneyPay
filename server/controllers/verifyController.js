@@ -1,5 +1,5 @@
 const axios = require("axios");
-const Donation = require("../models/donationmodel");
+const Donation = require("../models/Donationmodel");
 
 exports.verifyPayment = async (req, res) => {
   try {

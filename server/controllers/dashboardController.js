@@ -1,4 +1,4 @@
-const Donation = require("../models/donationmodel");
+const Donation = require("../models/Donationmodel");
 
 exports.getDashboard = async (req, res) => {
 
