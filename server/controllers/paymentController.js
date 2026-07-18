@@ -1,5 +1,5 @@
 const axios = require("axios");
-const Donation = require("../models/donationmodel");
+const Donation = require("../models/Donationmodel");
 exports.createOrder = async (req, res) => {
   try {
     const {amount,name,email,phone,message } = req.body;
