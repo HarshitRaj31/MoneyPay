@@ -3,10 +3,11 @@ const Donation = require("../models/Donationmodel");
 exports.getDashboard = async (req, res) => {
 
    try {
-    // Only successful donations
-    const donations = await Donation.find({ status: "SUCCESS" }).sort({
-      createdAt: -1,
-    });
+   const donations = await Donation.find({
+  paymentStatus: "SUCCESS",
+}).sort({
+  createdAt: -1,
+});
 
 
     const totalAmount = donations.reduce(
