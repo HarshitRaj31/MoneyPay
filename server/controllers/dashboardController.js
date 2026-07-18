@@ -24,11 +24,11 @@ exports.getDashboard = async (req, res) => {
 
     });
    }
-   catch(err){
- console.log(err);
-
-    res.status(500).json({
-      message: "Server Error",
-    });
-   }
+   catch (err) {
+  console.error("Dashboard Error:", err);
+  res.status(500).json({
+    message: "Server Error",
+    error: err.message,
+  });
+}
 };
