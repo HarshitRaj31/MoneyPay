@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import './PaymentSuccess.css'
 const PaymentSuccess = () => {
      const [search] = useSearchParams();
 const navigate = useNavigate();

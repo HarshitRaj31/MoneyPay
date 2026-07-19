@@ -5,7 +5,7 @@ exports.createOrder = async (req, res) => {
     const {amount,name,email,phone,message } = req.body;
 const orderId = `order_${Date.now()}`;
 await Donation.create({
-      donorName: name,
+      donorName,
       email,
       message,
       amount,
