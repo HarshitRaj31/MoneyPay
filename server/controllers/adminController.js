@@ -55,10 +55,10 @@ exports.register = async (req, res) => {
         message: "Admin already exists"
       });
     }
-
+ const hashedPassword = await bcrypt.hash(password, 10);
     const admin = await Admin.create({
       email,
-      password
+      password:hashedPassword,
     });
 
     res.status(201).json({
