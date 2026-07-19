@@ -20,7 +20,7 @@ const Dashboard = () => {
             try{
                 const token=localStorage.getItem("token");
             const {data} = await axios.get(
-                "http://localhost:5000/api/dashboard",
+                "https://moneypay-nv0l.onrender.com/api/dashboard",
                 {
                     headers:{
                         Authorization:`Bearer ${token}`,
@@ -76,7 +76,7 @@ const Dashboard = () => {
                     {dashboard.donations.length>0?(
                         dashboard.donations.map((donation)=>(
                             <tr key={donation._id}>
-                                <td >{donation.donorName}</td>
+                                <td >{donation.name}</td>
                                 <td>{donation.amount}</td>
                                 <td>{donation.message||"No message"}</td>
                             </tr>

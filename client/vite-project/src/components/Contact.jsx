@@ -21,7 +21,7 @@ const Contact = () => {
       return;
     }
    try {
-      await axios.post("http://localhost:5000/api/contact", form);
+      await axios.post("https://moneypay-nv0l.onrender.com/api/contact", form);
       alert("Message sent successfully!");
       setForm({
         name: "",

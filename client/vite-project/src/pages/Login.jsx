@@ -10,7 +10,7 @@ const Login = () => {
   const login=async () => {
     try{
     const {data}=await axios.post(
-    "http://localhost:5000/api/admin/login",
+    "https://moneypay-nv0l.onrender.com/api/admin/login",
      {
       email,
       password

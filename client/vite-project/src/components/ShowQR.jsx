@@ -10,7 +10,7 @@ const ShowQR = () => {
         try {
             setloading(true);
 const { data } = await axios.post(
-            "http://localhost:5000/api/payment/create-order",
+            "http://moneypay-nv0l.onrender.com/api/payment/create-order",
             {
                 name,
                 email,
