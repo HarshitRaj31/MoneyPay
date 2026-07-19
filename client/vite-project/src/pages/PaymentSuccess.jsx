@@ -11,7 +11,7 @@ const PaymentSuccess = () => {
         const orderId = searchParams.get("order_id");
 
         const { data } = await axios.get(
-          `http://localhost:5000/api/payment/verify/${orderId}`
+          `https://moneypay-nv0l.onrender.com/api/verify/${orderId}`
         );
 
         console.log(data);

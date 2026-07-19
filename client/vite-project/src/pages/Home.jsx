@@ -31,7 +31,7 @@ const [loading, setLoading] = useState(false);
     try {
       setLoading(true);
       const { data } = await axios.post(
-      "http://localhost:5000/api/payment/create-order",
+      "https://moneypay-nv0l.onrender.com/api/payment/create-order",
       {
         name,
         email,
@@ -50,9 +50,14 @@ const [loading, setLoading] = useState(false);
       redirectTarget: "_self",
     });
     } catch (error) {
-      console.log(error);
-      alert("Payment failed. Please try again.");
-    }
+  console.error("Payment Error:", error);
+  if (error.response) {
+    console.log(error.response.data);
+    alert(JSON.stringify(error.response.data));
+  } else {
+    alert(error.message);
+  }
+}
     finally{
     setLoading(false);
     }

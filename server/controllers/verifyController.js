@@ -24,8 +24,8 @@ exports.verifyPayment = async (req, res) => {
        await Donation.findOneAndUpdate(
         { orderId: order.order_id },
         {
-          status: "SUCCESS",
-          paymentId: order.cf_order_id,
+          paymentStatus: "SUCCESS",
+         cfOrderId: order.cf_order_id,
         }
       );
 
@@ -37,7 +37,7 @@ exports.verifyPayment = async (req, res) => {
     await Donation.findOneAndUpdate(
       { orderId: order.order_id },
       {
-        status: "FAILED",
+        paymentStatus: "FAILED",
       }
     );
     res.json({

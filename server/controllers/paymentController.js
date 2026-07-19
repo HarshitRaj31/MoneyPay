@@ -10,7 +10,7 @@ await Donation.create({
       message,
       amount,
       orderId,
-      status: "PENDING"
+      paymentStatus: "PENDING"
     });
     const orderData = {
       order_id: orderId,
