@@ -32,6 +32,7 @@ const Login = () => {
         <input type="email" placeholder='Email'value={email} onChange={(e)=>setEmail(e.target.value)} />
         <input type="password" placeholder='Password'value={password} onChange={(e)=>setPassword(e.target.value)} />
         <button className='login-btn' onClick={login}>Login</button>
+        <hr />
         <button className='login-btn' onClick={<Home/>}>Go Back to Home</button>
         </div>
     </div>
