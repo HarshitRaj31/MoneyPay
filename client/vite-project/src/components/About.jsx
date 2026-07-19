@@ -14,9 +14,9 @@ const About = () => {
         </div>
         <div className="about-content">
             
-          <h1>About Me</h1>
+          <h1>About</h1>
 
-          <h2>MoneyPay 👋</h2>
+          <h2>Welcom to MoneyPay 👋</h2>
 
           <p>
             MoneyPay is a simple and secure donation website that makes it easy for people to support a good cause. With just a few clicks, you can make a donation safely through our trusted payment system.
