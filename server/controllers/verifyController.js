@@ -1,11 +1,8 @@
 const axios = require("axios");
 const Donation = require("../models/Donationmodel");
-
 exports.verifyPayment = async (req, res) => {
   try {
-
     const { orderId } = req.params;
-
     const response = await axios.get(
       `https://sandbox.cashfree.com/pg/orders/${orderId}`,
       {
@@ -16,7 +13,6 @@ exports.verifyPayment = async (req, res) => {
         }
       }
     );
-
     const order = response.data;
      console.log(order);
     if (order.order_status === "PAID") {
@@ -28,7 +24,6 @@ exports.verifyPayment = async (req, res) => {
          cfOrderId: order.cf_order_id,
         }
       );
-
       return res.json({
         success: true,
         order
