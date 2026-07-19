@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import har from './Harshit.jpeg'
+import logo from './logo.jpeg'
 const About = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const About = () => {
      <div className="about-container">
         <div className="profile2">
             <img
-            src={har}
+            src={logo}
             alt="Harshit Raj"
           />
         </div>
@@ -16,25 +16,25 @@ const About = () => {
             
           <h1>About Me</h1>
 
-          <h2>Hi, I'm Harshit Raj 👋</h2>
+          <h2>MoneyPay 👋</h2>
 
           <p>
-            I'm a passionate Full Stack Developer who enjoys building
-            modern web applications using React, Node.js, Express,
-            and MongoDB.
+            MoneyPay is a simple and secure donation website that makes it easy for people to support a good cause. With just a few clicks, you can make a donation safely through our trusted payment system.
           </p>
 
           <p>
-            I love creating projects that solve real-world problems,
-            learning new technologies, and sharing my knowledge with
-            others.
+            Our goal is to make online donations quick, transparent, and hassle-free. We also provide an admin dashboard to keep track of donations and manage records easily.
           </p>
-
+            <h2>✨ Features</h2>
           <p>
-            If you enjoy my work and would like to support my journey,
-            your contribution helps me continue building projects and
-            learning new skills.
+            💳 Secure online donations with Cashfree Payment Gateway
           </p>
+          <p>
+            📊 Admin dashboard with donation analytics
+          </p>
+          <p>👤 Admin authentication using JWT</p>
+          <p>📱 Responsive design for desktop and mobile</p>
+          
            <div className="skills">
             <span>React</span>
             <span>Node.js</span>
