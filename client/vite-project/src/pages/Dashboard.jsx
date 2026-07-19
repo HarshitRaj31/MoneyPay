@@ -76,7 +76,7 @@ const Dashboard = () => {
                     {dashboard.donations.length>0?(
                         dashboard.donations.map((donation)=>(
                             <tr key={donation._id}>
-                                <td >{donation.donorName}</td>
+                                <td >{donation.name}</td>
                                 <td>{donation.amount}</td>
                                 <td>{donation.message||"No message"}</td>
                             </tr>
